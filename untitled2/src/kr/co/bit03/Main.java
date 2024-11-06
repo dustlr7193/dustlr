@@ -9,9 +9,6 @@ class Arr{
         ary=new PhoneNumber[x];
         x=0;
     }
-    void friend(PhoneNumber p){
-        ary[x++]=p;
-    }
     void add(PhoneNumber p){
         ary[x++]=p;
     }
