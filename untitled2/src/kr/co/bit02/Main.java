@@ -22,7 +22,7 @@ class XYZ extends XY{ //XY를 상속받은 XYZ클래스
         show();
         System.out.println(name);
     }
-}
+}iufvyiutciytg
 
 public class Main {
     public static void main(String[] args) {
