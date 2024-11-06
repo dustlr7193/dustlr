@@ -35,6 +35,7 @@ public class Main {
         y.set(6,8);   //부모클래스로 부터 상속받은 메소드
         y.setname("xyz");
         y.pr(); //6,8,xyz
+        System.out.println("zzz");
 
     }
 }
