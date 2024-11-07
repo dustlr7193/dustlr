@@ -1,4 +1,4 @@
-package kr.co;
+package kr.co.bit06;
 interface A{
     public void funcA();
 }
