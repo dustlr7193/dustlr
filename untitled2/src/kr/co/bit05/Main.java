@@ -1,13 +1,16 @@
 package kr.co.bit05;
 interface Food{
+
     public String name();
         }
 class Pizza implements Food{
+    @Override
     public String name(){
         return "피자";
     }
 }
 class Steak implements Food{
+    @Override
     public String name(){
         return "스테이크";
     }
