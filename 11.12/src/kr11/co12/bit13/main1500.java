@@ -21,6 +21,7 @@ class Person{
     public boolean equals(Object obj){
         Person p=(Person) obj;
         if(p.getId()==this.id && p.getName().equals(this.name)){
+       //obj에는 Person 객체로 대입되어서 get 함수로 String과 int타입으로 비교 대상과 타입 같게 해줌
          return true;
         }
         else {
