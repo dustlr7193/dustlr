@@ -38,12 +38,12 @@ public class Client {
         public void run(){
             Scanner scanner=new Scanner(System.in);
             try {
-                if(dataOutputStream!=null) dataOutputStream.writeUTF(name);
+                if(dataOutputStream!=null) {dataOutputStream.writeUTF(name);}
                     while (dataOutputStream!=null) {
                         String msg=scanner.nextLine();
-                        if(msg.equals("quit"))
-                            break;
-                        dataOutputStream.writeUTF(" ["+name+"] "+msg);
+                        if(msg.equals("quit")){
+                            break;}
+                        else{dataOutputStream.writeUTF(" ["+name+"] "+msg);}
                     }
                     dataOutputStream.close();
                     socket.close();
