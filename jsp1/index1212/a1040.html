@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="param.js"></script>
+</head>
+<body>
+   
+    <form method="get" action="ParamServlet" name="frm">
+       아이디 : <input type="text" name="id"><br>
+       나이 : <input type="text" name="age"><br>
+       <input type="submit" value="전송" onclick="return check()">
+    </form>
+</body>
+<script>
+    let id = document.getElementsByName('id');
+    let age = document.getElementsByName('age');
+
+    function check(){
+        if(document.frm.id.value==""){
+            alert("id입력해라")         // 아이디값이 없으면 alert 경고
+            return false;
+        }
+        else if(isNaN(document.frm.age.value)){       
+            alert("수로입력")                   // 나이값이 문자면 alert
+            return false;
+
+        }else if(document.frm.age.value==""){
+            alert("나이 입력해라")        //  나이 값이 없으면 alert 경고
+            return false;
+        }else{
+            return true;
+        }
+
+    }
+
+</script>
+</html>
